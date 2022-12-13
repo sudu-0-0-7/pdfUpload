@@ -1,3 +1,8 @@
+#pdfInput{
+  display: flex;
+  position: absolute;
+  margin-top: -500px;
+}
 input[type="file"]::-webkit-file-upload-button {
     border: 2px solid #6c5ce7;
     padding: 0.2em 0.4em;
@@ -6,12 +11,13 @@ input[type="file"]::-webkit-file-upload-button {
     transition: 1s;
     color: red;
     font-size: 2rem;
-    margin-bottom: 1000px;
+    
   }
   
   input[type="file"]::file-selector-button:hover {
     background-color: #81ecec;
     border: 2px solid #00cec9;
+    
   }
   body{
 
@@ -19,9 +25,11 @@ input[type="file"]::-webkit-file-upload-button {
 
     align-items:center;
 
-    justify-content: center;
+    justify-content:center;
 
-    background-color: black;
+    background-image: url("bg.jpg");
+
+    background-position: center;
 
     color : white;
 
@@ -32,5 +40,33 @@ input[type="file"]::-webkit-file-upload-button {
     min-height: 100vh;
 
 }
+form{
+  height: 200px;
 
+}
+
+#uploadButton
+{
+  display: flex;
+  border: 2px solid #6c5ce7;
+  border-radius: 0.2em;
+  margin-left: 50px;
+  margin-top: 10px;
+  background-color: #a29bfe;
+  transition: 1s;
+  color: red;
+  font-size: 2rem;
+  
+}
+
+#uploadButton:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+  
+}
+/* #pdfCanvas {
+  margin-top: 100px;
+  height: 500px;
+	margin-left: 10px;
+} */
  
