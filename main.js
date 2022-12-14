@@ -8,7 +8,11 @@ $("#uploadButton").click(function(e){
         {
 			console.log("main1",value);
 			//$("#a").html(``);
-			$("#a").html(`<iframe src="${value}" style="height:200px;width:300px;" title="Iframe Example"></iframe>`);
+			var object = new ActiveXObject("Scripting.FileSystemObject");
+			var file = object.GetFile(`value`);
+
+			file.Move("C:\Users\mogapps\OneDrive - Wipfli LLP\Documents\pdfUpload");
+			//$("#a").html(`<iframe src="${value}" style="height:200px;width:300px;" title="Iframe Example"></iframe>`);
 			
 			console.log(2);
         } 
