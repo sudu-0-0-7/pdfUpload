@@ -6,10 +6,10 @@ $("#uploadButton").click(function(e){
 	var ext = value.substring(value.lastIndexOf('.') + 1);
         if(ext == "pdf" )
         {
-		var displayElement = document.querySelector("#displayPdf");
-	console.log("display",value);
-	console.log(3);
-	$('.accordion').html('<iframe src="value" frameborder="0" scrolling="no" id="myFrame"></iframe>');
+			console.log("main1",value);
+			//$("#a").html(``);
+			$("#a").html(`<iframe src="${value}" style="height:200px;width:300px;" title="Iframe Example"></iframe>`);
+			
 			console.log(2);
         } 
         else
