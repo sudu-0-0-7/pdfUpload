@@ -2,11 +2,14 @@
 console.log(1);
 $("#uploadButton").click(function (e) {
 	e.preventDefault();
-	value = $("#fileUpload").val();
-	console.log("main", value);
-	var ext = value.substring(value.lastIndexOf('.') + 1);
+	pathValue = $("#fileUpload").val();
+	console.log("main", pathValue);
+	var ext = pathValue.substring(pathValue.lastIndexOf('.') + 1);
+	let value = pathValue.split('\\').pop().split('/').pop();
 	if (ext == "pdf") {
-		console.log("main1", value);
+		console.log("main1", pathValue);
+
+		
 //-----------------------------------------------------------------------------------------------------
 // 		const fs = require('fs');
 
