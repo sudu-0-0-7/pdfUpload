@@ -1,35 +1,30 @@
-#pdfInput{
+ #pdfInput{
   display: flex;
   position: absolute;
-  margin-top: -500px;
+ 
+
 }
+
 input[type="file"]::-webkit-file-upload-button {
-    border: 2px solid #6c5ce7;
-    padding: 0.2em 0.4em;
+    border: white;
+    padding: 0.2em 0.2em;
     border-radius: 0.2em;
-    background-color: #a29bfe;
-    transition: 1s;
-    color: red;
+    background-color: rgb(137, 137, 126);
+    color: rgb(6, 6, 6);
     font-size: 2rem;
     
   }
   
   input[type="file"]::file-selector-button:hover {
     background-color: #81ecec;
-    border: 2px solid #00cec9;
+    border:  #00cec9;
     
   }
   body{
 
-    display:flex;
-
-    align-items:center;
-
     justify-content:center;
 
-    background-image: url("bg.jpg");
-
-    background-position: center;
+    background-color: black;
 
     color : white;
 
@@ -41,21 +36,27 @@ input[type="file"]::-webkit-file-upload-button {
 
 }
 form{
-  height: 200px;
 
+  height: 200px;
+  border: 5px;
+  border-color: white;
+  
 }
 
 #uploadButton
 {
-  display: flex;
-  border: 2px solid #6c5ce7;
-  border-radius: 0.2em;
-  margin-left: 50px;
-  margin-top: 10px;
-  background-color: #a29bfe;
-  transition: 1s;
-  color: red;
-  font-size: 2rem;
+   display: inline-block;
+    position: relative;
+    padding:  15px 20px;
+    background: rgb(137, 137, 126);
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    margin: 20px;
+    border-radius: 25px;
+   
+   
   
 }
 
@@ -64,9 +65,13 @@ form{
   border: 2px solid #00cec9;
   
 }
-/* #pdfCanvas {
-  margin-top: 100px;
-  height: 500px;
-	margin-left: 10px;
-} */
- 
+
+ #fileUploads{
+  margin-top: 5px;
+ text-align: center;
+ color: bisque;
+} 
+iframe{
+  margin-left: 325px;
+  margin-top: 200px;
+}
