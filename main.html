@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-    <link rel="stylesheet" href="main.css" />
-</head>
-<body>
-    <h1 id="fileUploads">Upload file</h1>
-    <div id="pdfInput" style="margin-left: 490px;">
-    <form >
-         
-        <input type="file" id="fileUpload" accept=".pdf"/>
-        
-        <input type="submit" id="uploadButton" value="Display">
 
-        <script src="main.js"></script>
-      </form>
-    </div>
-<div id="a"> </div>
-<!-- <canvas id="pdfViewer"></canvas> -->
-      <!-- <canvas id="pdfCanvas" ></canvas> -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <h1 id="fileUploads">Upload file</h1>
+  <div id="pdfInput" style="margin-left: 490px;">
+    <form>
+      <input type="file" id="fileUpload" accept=".pdf" />
+      <div class="container">
+        <div class="dragAreaa">
+          <input type="submit" id="uploadButton" ondrop="drop(event)" value="Display">
+        </div>
+      </div>
+
+      <script src="main.js"></script>
+    </form>
+  </div>
+  <div id="a"> </div>
 </body>
+
 </html>
