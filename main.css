@@ -41,8 +41,10 @@
    font-size: 18px;
    text-align: center;
    font-weight: 700;
-   margin: 20px;
+   margin: 200px;
    border-radius: 25px;
+   margin-left: 50px;
+   margin-top: -550px;
  }
 
  #uploadButton:hover {
@@ -70,7 +72,3 @@
    overflow: auto;
  }
 
- .container {
-   margin-left: 320px;
-   margin-top: -75px;
- }

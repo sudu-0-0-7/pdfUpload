@@ -11,21 +11,19 @@
   <link rel="stylesheet" href="main.css" />
 </head>
 
-<body>
+<body class="dragAndDrop">
   <h1 id="fileUploads">Upload file</h1>
   <div id="pdfInput" style="margin-left: 490px;">
     <form>
       <input type="file" id="fileUpload" accept=".pdf" />
-      <div class="container">
-        <div class="dragAreaa">
-          <input type="submit" id="uploadButton" ondrop="drop(event)" value="Display">
-        </div>
-      </div>
+        
+      <input type="submit" id="uploadButton"  value="Display">
+      
 
       <script src="main.js"></script>
     </form>
   </div>
-  <div id="a"> </div>
+  <div id="pdfDisplay"> </div>
 </body>
 
 </html>
