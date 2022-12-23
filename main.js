@@ -11,7 +11,7 @@ dragArea.addEventListener('drop', (e) => {
 	e.preventDefault();
 	$('body').addClass('start-scrolling');
 	pdfFile = e.dataTransfer.files[0];
-	if (pdfFile.type == 'application/pdf' ) {
+	if (pdfFile.type == 'application/pdf') {
 		const reader = new FileReader();
 		reader.readAsDataURL(pdfFile);
 		reader.onload = function (e) {
@@ -27,7 +27,7 @@ dragArea.addEventListener('drop', (e) => {
 
 $("#uploadButton").click(function (e) {
 	e.preventDefault();
-	
+
 	var target = $('#fileUpload').get(0);
 	if (!target.files.length) {
 		alert("Enter a pdf file");
@@ -35,7 +35,7 @@ $("#uploadButton").click(function (e) {
 	}
 	$('body').addClass('start-scrolling');
 	file = target.files[0];
-	if (file.type == 'application/pdf' ) {
+	if (file.type == 'application/pdf') {
 		const reader = new FileReader();
 		reader.readAsDataURL(file);
 		reader.onload = function (e) {
