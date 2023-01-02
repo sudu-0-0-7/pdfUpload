@@ -9,6 +9,7 @@ dragArea.addEventListener('dragover', (e) => {
 
 dragArea.addEventListener('drop', (e) => {
 	e.preventDefault();
+	$('#fileUpload').val("")
 	$('body').addClass('start-scrolling');
 	pdfFile = e.dataTransfer.files[0];
 	if (pdfFile.type == 'application/pdf') {
